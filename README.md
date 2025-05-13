@@ -19,29 +19,44 @@ Después de limpiar, ordenar, analizar y realizar *feature engineering* con dist
 
 A continuación, una lista de las principales variables disponibles:
 
-- `amount_tsh`: Total static head (cantidad de agua disponible)
-- `date_recorded`: Fecha de ingreso del registro
-- `funder`: Entidad financiadora del pozo
-- `gps_height`: Altura del pozo
-- `installer`: Organización que instaló el pozo
-- `longitude`, `latitude`: Coordenadas GPS
-- `wpt_name`: Nombre del punto de agua
-- `num_private`: Información privada (vacía en muchos casos)
-- `basin`, `subvillage`, `region`, `lga`, `ward`: Ubicación geográfica
-- `region_code`, `district_code`: Ubicación geográfica (codificada)
-- `population`: Población beneficiada
-- `public_meeting`: ¿Se realizó una reunión pública?
-- `recorded_by`: Entidad que registró la observación
-- `scheme_management`, `scheme_name`: Tipo de gestión del sistema
-- `permit`: ¿Cuenta con permiso?
-- `construction_year`: Año de construcción
-- `extraction_type`, `extraction_type_group`, `extraction_type_class`: Tipo de extracción
-- `management`, `management_group`: Tipo de gestión
-- `payment`, `payment_type`: Método de pago
-- `water_quality`, `quality_group`: Calidad del agua
-- `quantity`, `quantity_group`: Cantidad de agua
-- `source`, `source_type`, `source_class`: Fuente de agua
-- `waterpoint_type`, `waterpoint_type_group`: Tipo de punto de agua
+- `amount_tsh` - Total static head (amount water available to waterpoint)
+- `date_recorded` - The date the row was entered
+- `funder` - Who funded the well
+- `gps_height` - Altitude of the well
+- `installer` - Organization that installed the well
+- `longitude` - GPS coordinate
+- `latitude` - GPS coordinate
+- `wpt_name` - Name of the waterpoint if there is one
+- `basin` - Geographic water basin
+- `subvillage` - Geographic location
+- `region` - Geographic location
+- `region_code` - Geographic location (coded)
+- `district_code` - Geographic location (coded)
+- `lga` - Geographic location
+- `ward` - Geographic location
+- `population` - Population around the well
+- `public_meeting` - True/False
+- `recorded_by` - Group entering this row of data
+- `scheme_management` - Who operates the waterpoint
+- `scheme_name` - Who operates the waterpoint
+- `permit` - If the waterpoint is permitted
+- `construction_year` - Year the waterpoint was constructed
+- `extraction_type` - The kind of extraction the waterpoint uses
+- `extraction_type_group` - The kind of extraction the waterpoint uses
+- `extraction_type_class` - The kind of extraction the waterpoint uses
+- `management` - How the waterpoint is managed
+- `management_group` - How the waterpoint is managed
+- `payment` - What the water costs
+- `payment_type` - What the water costs
+- `water_quality` - The quality of the water
+- `quality_group` - The quality of the water
+- `quantity` - The quantity of water
+- `quantity_group` - The quantity of water
+- `source` - The source of the water
+- `source_type` - The source of the water
+- `source_class` - The source of the water
+- `waterpoint_type` - The kind of waterpoint
+- `waterpoint_type_group` - The kind of waterpoint
 
 ## Ejemplo de fila del dataset
 
